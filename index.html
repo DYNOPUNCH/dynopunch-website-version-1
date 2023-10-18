@@ -20,7 +20,7 @@
     <script src="bootstrap/jquery-3.7.1.js"></script>
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Link custom CSS -->
+    <!-- Link custom CSS (overwrites / adds to bootstrap defaults) -->
 
     <link rel="stylesheet" href="style.css">
 
@@ -28,13 +28,44 @@
 
 <body>
 
-    <div class="container">
-        <h1>Hello, Bootstrap and jQuery!</h1>
-        <button class="btn btn-primary" id="myButton">Click me</button>
+    <!-- Navigation Bar -->
+
+    <nav class="navbar bg-nav">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="resc/LOGO_DP 1.png" alt="Bootstrap" width="200" height="85">
+          </a>
+        </div>
+    </nav>
+
+    <!-- Website Banner -->
+
+    <div class="banner-16x9" alt="Homepage Banner">
+        <img class="aspect-ratio-16x9" src="resc/dynopunch-banner-fall-2023.jpg" alt="Banner">
     </div>
 
-    <!-- Link to jQuery and Bootstrap JS files -->
+    <!-- Banner Selection Bar -->
 
+    <div class="banner-selection-bar bg-nav">
+
+    </div>
+
+    <!-- Current games in development section -->
+
+    <div class="container-fluid title-card-right fs-3">Games in Development</div>
+
+    <div class="container-fluid info-area-one">
+
+    </div>
+
+    <!-- Mission Statement -->
+
+    
+    <div class="container-fluid title-card-left text-end fs-3"><div class="container col-1">  </div>Our Mission</div>
+
+    <div class="container-fluid info-area-two">
+        Test
+    </div>
 
     <!-- Your custom script -->
     <script>
@@ -45,6 +76,7 @@
             });
         });
     </script>
+
 </body>
 
 </html>
