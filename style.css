@@ -10,7 +10,7 @@
 
 /* Set Padding and Margins for site to a base of 0px */
 
-html, body
+*
 {
 
     padding: 0px;
@@ -59,6 +59,12 @@ div.banner-selection-bar
 {
     width: 100%;
     height: 36px;
+
+    background: rgb(0,0,0);
+    background: -moz-linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 10%, rgba(51,51,51,1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 10%, rgba(51,51,51,1) 100%);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 10%, rgba(51,51,51,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#333333",GradientType=1);
 }
 
 /* Title Card Right */
@@ -67,10 +73,6 @@ div.title-card-right
 {
     font-family: "HelveticaRounded";
     color: white;
-
-    line-height: 80px;
-    height: 80px;
-    
 
     background: rgb(2,0,36);
     background: -moz-linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 36%, rgba(51,51,51,1) 100%);
@@ -85,9 +87,6 @@ div.title-card-left
 {
     font-family: "HelveticaRounded";
     color: white;
-
-    line-height: 80px;
-    height: 80px;
     
     background: rgb(2,0,36);
     background: -moz-linear-gradient(270deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 36%, rgba(51,51,51,1) 100%);
@@ -100,8 +99,6 @@ div.title-card-left
 
 div.info-area-one
 {
-    height: 200px;
-
     background-color: #F8CC2F;
 }
 
@@ -109,7 +106,14 @@ div.info-area-one
 
 div.info-area-two
 {
-    height: 200px;
-
     background-color: #F8CC2F;
+}
+
+div.info-card-one
+{
+    background: rgb(0,0,0);
+background: -moz-linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 10%, rgba(108,108,108,1) 100%);
+background: -webkit-linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 10%, rgba(108,108,108,1) 100%);
+background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 10%, rgba(108,108,108,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#6c6c6c",GradientType=1);
 }
