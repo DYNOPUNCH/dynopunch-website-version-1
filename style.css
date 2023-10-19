@@ -117,3 +117,12 @@ background: -webkit-linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 10%,
 background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 10%, rgba(108,108,108,1) 100%);
 filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#6c6c6c",GradientType=1);
 }
+
+.card {
+    flex-direction: row;
+  }
+
+.card img {
+    width: 30%;
+    height: 30%;
+  }
