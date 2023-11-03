@@ -12,117 +12,143 @@
 
 *
 {
+    font-family: HelveticaRounded;
+}
 
+html, body
+{
     padding: 0px;
     margin: 0px;
 }
 
-/* Set default background color for page */
-
 body
 {
-    background-color: black
+    background-color: #F9F1C8;
 }
 
-/* Custom color definitions */
-
-.bg-nav{background-color: black;}
-
-/* Make a 16 : 9 area that scales the image based on the browser width */
-
-div.banner-16x9
-{
-    width: 100%;
-    padding-top: 56.25%;
-    position: relative;
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
-div.current-banner
-{
-    background-image: url(resc/dynopunch-banner-fall-2023.jpg);
-}
+ul {
 
-img.aspect-ratio-16x9
-{
-    /* Make the image fill the container */
     width: 100%;
 
-    /* Position the image absolutely within the container */
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+
     position: absolute;
-    top: 0;
-    left: 0;
-}
-
-/* Banner selection Container */
-
-div.banner-selection-bar
-{
-    width: 100%;
-    height: 36px;
-
-    background: rgb(0,0,0);
-    background: -moz-linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 10%, rgba(51,51,51,1) 100%);
-    background: -webkit-linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 10%, rgba(51,51,51,1) 100%);
-    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 10%, rgba(51,51,51,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#333333",GradientType=1);
-}
-
-/* Title Card Right */
-
-div.title-card-right
-{
-    font-family: "HelveticaRounded";
-    color: white;
-
-    background: rgb(2,0,36);
-    background: -moz-linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 36%, rgba(51,51,51,1) 100%);
-    background: -webkit-linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 36%, rgba(51,51,51,1) 100%);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 36%, rgba(51,51,51,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#333333",GradientType=1);
-}
-
-/* Title Card Left */
-
-div.title-card-left
-{
-    font-family: "HelveticaRounded";
-    color: white;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
     
-    background: rgb(2,0,36);
-    background: -moz-linear-gradient(270deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 36%, rgba(51,51,51,1) 100%);
-    background: -webkit-linear-gradient(270deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 36%, rgba(51,51,51,1) 100%);
-    background: linear-gradient(270deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 36%, rgba(51,51,51,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#333333",GradientType=1);
-}
+  }
+  
+  li a 
+  {
 
-/* Information Area One */
+    float: right;
 
-div.info-area-one
-{
-    background-color: #F8CC2F;
-}
+    display: inline-block;
+    color: white;
 
-/* Information Area Two */
+    text-align: center;
 
-div.info-area-two
-{
-    background-color: #F8CC2F;
-}
+    padding: 0px 20px;
 
-div.info-card-one
-{
-    background: rgb(0,0,0);
-background: -moz-linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 10%, rgba(108,108,108,1) 100%);
-background: -webkit-linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 10%, rgba(108,108,108,1) 100%);
-background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 10%, rgba(108,108,108,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#6c6c6c",GradientType=1);
-}
+    text-decoration: none;
 
-.card {
-    flex-direction: row;
   }
 
-.card img {
-    width: 30%;
-    height: 30%;
+  li a:hover
+  {
+    color: #F9F1C8;
+
   }
+
+.navigation-bar
+{
+    background-color: #221916;
+
+    width: 100%;
+    height: 120px;
+
+    position:relative;
+}
+
+.brand-logo
+{
+    width: 200px;
+    height: 85px;
+
+    margin-left: 17px;
+
+    top: 50%;
+    transform: translate(0px, -50%);
+
+    position: absolute;
+    display: inline-block;
+
+}
+
+.parent-block
+{
+    background-color: #F8CC2F;
+
+    padding: 5;
+
+    width: 100%;
+    height: 500px;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center; 
+
+    border-radius: 5px;
+
+}
+
+.child-block
+{
+    background-image: url("resc/testicon.jpeg");
+    background-size: cover;
+
+    background-color: black;
+
+    position:relative;
+
+    margin: 10px;
+    box-sizing: border-box;
+
+    width: 300px;
+    height: 300px;
+
+    border-radius: 5px;
+
+
+    overflow: hidden;
+}
+
+.child-title
+{
+    background-color: black;
+    color: aliceblue;
+
+    position:absolute;
+
+    padding: 5px 10px;
+
+    width: 100%;
+    height: 80px;
+
+    top: 220;
+    margin-bottom: 0px;
+
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
