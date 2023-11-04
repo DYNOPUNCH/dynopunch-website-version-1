@@ -75,34 +75,62 @@ ul {
     background-color: #221916;
 
     width: 100%;
-    height: 120px;
+    height: 75px;
 
     position:relative;
 }
 
+.wrapper-container
+{
+    position: relative;
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 90%;
+    height: 75px;
+}
+
 .brand-logo
 {
-    width: 200px;
-    height: 85px;
+    background-image: url("resc/LOGO_DP 1.png");
+    background-size: cover;
+
+    width: 140px;
+    height: 59px;
+
+    visibility: visible;
 
     margin-left: 17px;
 
     top: 50%;
-    transform: translate(0px, -50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 
     position: absolute;
     display: inline-block;
 
 }
 
-.parent-block
+/* --- Card Rules --- */
+
+.card-image
 {
-    background-color: #F8CC2F;
+    width: 300px;
+    height: 300px;
+
+    background-image: url("resc/testicon.jpeg");
+    background-size: cover;
+
+    display: block;
+}
+
+.card-section
+{
+    background-color: #F9F1C8;
 
     padding: 5;
 
     width: 100%;
-    height: 500px;
+    height: auto;
 
     display: flex;
     flex-wrap: wrap;
@@ -113,20 +141,17 @@ ul {
 
 }
 
-.child-block
+.card-block
 {
-    background-image: url("resc/testicon.jpeg");
-    background-size: cover;
-
     background-color: black;
 
     position:relative;
-
+    display: block;
     margin: 10px;
     box-sizing: border-box;
 
     width: 300px;
-    height: 300px;
+    height: 500px;
 
     border-radius: 5px;
 
@@ -134,21 +159,215 @@ ul {
     overflow: hidden;
 }
 
-.child-title
+.card-information
 {
-    background-color: black;
+    background-color: #221916;
     color: aliceblue;
 
     position:absolute;
+    display: block;
 
-    padding: 5px 10px;
+    padding: 10px 10px;
+
+    width: 100%;
+    height: 100%;
+}
+
+/* --- Page Rules --- */
+
+.page-title
+{
+    background-color: #221916;
+    position: static;
 
     width: 100%;
     height: 80px;
+}
 
-    top: 220;
-    margin-bottom: 0px;
+.section-title
+{
+    position: relative;
 
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+    color: white;
+    text-transform: uppercase;
+
+    margin-left: 17px;
+
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+/* --- Text Rules --- */
+
+.text-card-title
+{
+    font-size: 19px;
+}
+
+.text-card-information
+{
+    font-size: 16px;
+}
+
+/* --- Button Rules --- */
+
+.button-rounded
+{
+
+}
+
+.button-bottom-fill
+{
+    background-color: #ED5B53;
+    color: #221916;;
+
+    margin: auto;
+
+    position:absolute;
+
+    top: 100%;
+    -ms-transform: translateY(-100%);
+    transform: translateY(-100%);
+
+    width: 100%;
+
+    height: 50px;
+    padding: 10px 10px;
+}
+
+.button-bottom-fill:hover
+{
+    background-color: #ffe49c;
+    color: #221916;
+
+    position:absolute;
+
+    top: 100%;
+    -ms-transform: translateY(-100%);
+    transform: translateY(-100%);
+
+    width: 100%;
+
+    height: 50px;
+    padding: 10px 10px;
+}
+
+.button-center {
+    position:absolute;
+
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+
+    margin: auto;
+  }
+
+.mission-section
+{
+    width: 100%;
+    height: 800px;
+
+    position: relative;
+
+    background-image: url("resc/BACKGROUND_stars.png");
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: 10%;
+
+    overflow: hidden;
+}
+
+.mission-bg-overlay
+{
+    position: absolute;
+
+    width: 100%;
+    height: 800px;
+
+    background-image: url("resc/BACKGROUND_ShokoIcon.svg");
+    background-size: 1200px;
+    background-repeat: no-repeat;
+    background-position-x: -450px;
+    background-position-y: -100px;
+
+    top: 0px;
+    left: 0px;
+}
+
+.mission-text-block
+{
+    position: absolute;
+    display: inline;
+
+    width: 400px;
+    height: auto;
+
+    margin: 40px;
+
+    color: #F9F1C8;
+
+    -ms-transform: translateY(50%);
+    transform: translateY(50%);
+
+}
+
+.social-media-section
+{
+    background-color: #F8CE3A;
+
+    position: relative;
+
+    width: 100%;
+    height: 204px;
+}
+
+.social-media-badge-section
+{
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+}
+
+.social-media-badge{
+
+    background-color: #221916;
+
+    position: relative;
+    display: inline-block;
+
+    width: 50px;
+    height: 50px;
+
+    margin: 10px 20px;
+
+    border-radius: 50%;
+}
+
+.center-title
+{
+    text-align: center;
+    padding: 10px;
+
+}
+
+.vertical-center
+{
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.footer
+{
+    background-color: #221916;
+
+    width: 100%;
+    height: 400px;
+
 }
