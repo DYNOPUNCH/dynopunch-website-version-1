@@ -324,11 +324,9 @@ ul {
     background-image: url("resc/BACKGROUND_ShokoIcon.svg");
     background-size: 1200px;
     background-repeat: no-repeat;
-    background-position-x: -450px;
+    background-position-x: center;
     background-position-y: -100px;
 
-    top: 0px;
-    left: 0px;
 }
 
 .mission-text-block
