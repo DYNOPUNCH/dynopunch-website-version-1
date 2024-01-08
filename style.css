@@ -8,6 +8,13 @@
     font-style: normal;
 }
 
+.float-clear::after
+{
+    content: "";
+    display: table;
+    clear: both;
+}
+
 /* Set Padding and Margins for site to a base of 0px */
 
 *
@@ -21,13 +28,21 @@ html, body
     margin: 0px;
 }
 
-/* Add this code in a separate file named styles.css */
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
+body
+{
+    background-image: url("resc/BACKGROUND_stars.png");
+    background-repeat: repeat;
+    background-size: 10%;
+    background-attachment: fixed;
+}
+
+p
+{
+    margin: 0px;
 }
 
 .navbar {
+    position: sticky;
     display: flex;
     justify-content: space-between;
     align-items: center; /* Centers items vertically in the navbar */
@@ -36,7 +51,7 @@ body {
 }
 
 .logo {
-    width: 100px; /* Adjust size as needed */
+    width: 130px; /* Adjust size as needed */
 }
 
 .menu {
@@ -58,4 +73,103 @@ body {
 
 .menu a:hover {
     color: #ddd;
+}
+
+.intro-container
+{
+    background-color: red;
+    background-image: url("resc/shoko.png");
+    background-size: 900px;
+    background-repeat: no-repeat;
+    background-position-x: -125px;
+    background-position-y: -50px;
+    width: 100%;
+    height: 1080px;
+    
+}
+
+.intro-text-section
+{
+    margin: 0px;
+    width: 50%;
+    height: 100%;
+
+    float: right;
+    font-size: 20px;
+
+    display: flex;
+    align-items: center; /* Center vertically */
+    
+}
+
+.intro-paragraph
+{
+    text-align: center;
+}
+
+.button-container
+{
+    background-color: white;
+    width: 100%;
+
+    padding: 20px;
+}
+
+.contact-container
+{
+    background-color: yellow;
+    width: 100%;
+
+    padding: 20px;
+}
+
+.ending-note-container
+{
+    background-color: yellowgreen;
+    width: 100%;
+    padding: 20px;
+
+}
+
+.ending-note-image
+{
+    background-color: aquamarine;
+    width: 100px;
+    height: 100px;
+
+    margin: 20px;
+}
+
+.footer-container
+{
+    background-color: #333;
+    width: 100%;
+    height: 200px;
+}
+
+.text-center
+{
+    text-align: center;
+}
+
+.button
+{
+    background-color: bisque;
+    width: 300px;
+    height: 100px;
+    border-radius: 30px;
+
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    padding: 0px;
+
+    margin: 20px;
+}
+
+.button-set
+{
+    display: flex; /* Enables flexbox */
+    justify-content: center; /* Centers the buttons horizontally */
+    align-items: center; /* Centers content vertically */
 }
